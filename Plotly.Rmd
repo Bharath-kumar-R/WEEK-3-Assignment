@@ -1,0 +1,45 @@
+**R Markdown Presentation & Plotly : Developing Data Products Week 3 Assignment**
+#Bharath Kumar R
+#08-01-2020
+
+**Instructions**
+
+1.Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly.
+
+2.Review criteria : The rubric contains the following two questions:
+
++ Does the web page feature a date and is this date less than two months before the date that you're grading this assignment?
+
++ Is the web page a presentation and does it feature an interactive plot that appears to have been created with Plotly?
+
+**Crude Oil Price Data**
+
+*Time series of major Crude oil Prices explanis about the increase in the oil price.*
+
+1.Dataset contains daily and Monthly prices of crude oil starting from 26-12-2014  to 26-12-2019. Prices are in nominal dollars per barrel.
+
+
+# License : Public domain data is availabe in FRED ECONOMIC RESEARCH
+
+## Link: https://fred.stlouisfed.org/categories/32455
+
+
+```{r}
+sourceData <- read.csv("oil_price.csv", stringsAsFactors = FALSE)
+head(sourceData)
+```
+
+```{r}
+## Assigning titles to X & Y axis.
+x <- list(title = "Years")
+y <- list(title = "Price in USD")
+
+```
+
+**Plot of Natural Gas Prices using Plotly**
+```{r}
+
+plot_ly(sourceData, x = ~as.Date(DATE), y = ~price.in.USD, type = 'scatter')
+```
+
+
