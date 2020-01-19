@@ -1,6 +1,6 @@
 **R Markdown Presentation & Plotly : Developing Data Products Week 3 Assignment**
 #Bharath Kumar R
-#08-01-2020
+#19-01-2020
 
 **Instructions**
 
@@ -42,5 +42,5 @@ y <- list(title = "Price in USD")
 plot_ly(sourceData, x = ~as.Date(DATE), y = ~price.in.USD, type = 'scatter')
 ```
 
-
+#output in Rpubs : https://rpubs.com/ab11/Rplot02
 
