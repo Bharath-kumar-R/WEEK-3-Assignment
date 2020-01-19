@@ -36,7 +36,7 @@ y <- list(title = "Price in USD")
 
 ```
 
-**Plot of Natural Gas Prices using Plotly**
+**Plot of crude oil price using Plotly**
 ```{r}
 
 plot_ly(sourceData, x = ~as.Date(DATE), y = ~price.in.USD, type = 'scatter')
