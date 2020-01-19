@@ -10,4 +10,7 @@ Is the web page a presentation and does it feature an interactive plot that appe
 Example Submissionsless 
 Here's an extremely minimal passing example, but we hope your submission is much cooler!
 
- The file two things ploty.Rmd which contanis the Rcode and Link of the output of the code in Rpubs which is a scatter gragh.
+ The file two things ploty.Rmd which contains the Rcode and Link of the output of the code in Rpubs which is a scatter gragh.
+ where you can zoomin and zoomout to see the in and decrease of the oil price.
+ 
+ Thank You!!.
